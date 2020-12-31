@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_vertical|center_horizontal">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFFFF">
+
+		<webView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/webview"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:textSize="16.0sp"
+				android:textColor="#ffffffff"
+				android:gravity="center"
+				android:id="@+id/submit"
+				android:background="@drawable/cancel_download_bg"
+				android:layout_width="match_parent"
+				android:layout_height="44.0dip"
+				android:text="Cancel"
+				android:clickable="true"
+				android:foreground="?android:attr/selectableItemBackground"
+				android:fontFamily="sans-serif"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

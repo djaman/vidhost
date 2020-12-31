@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="2dp">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:background="@drawable/round_rating"
+		android:layout_height="wrap_content"
+		android:padding="14dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Rate Us"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginTop="8dp"
+			android:textColor="#FFFFFEFE"
+			android:textStyle="bold"/>
+
+		<RatingBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:progressTint="@color/white"
+			android:stepSize="1.0"/>
+
+		<TextView
+			android:textSize="16.0sp"
+			android:textColor="#ffffffff"
+			android:gravity="center"
+			android:id="@+id/submit"
+			android:background="@drawable/cancel_download_bg"
+			android:layout_width="fill_parent"
+			android:layout_height="44.0dip"
+			android:layout_marginTop="16.0dip"
+			android:text="Submit"
+			android:clickable="true"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:fontFamily="sans-serif"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

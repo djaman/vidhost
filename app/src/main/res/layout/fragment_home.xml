@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:background="@color/white"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@drawable/curve_toolbar_bg"
+		app:popupTheme="@style/ToolbarTitle">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical|center_horizontal">
+
+			<ImageView
+				android:id="@+id/media_image"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:scaleType="centerCrop"
+				android:visibility="visible"
+				android:src="@drawable/ic_video"/>
+
+			<TextView
+				android:id="@+id/toolbar_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+				android:layout_gravity="center"
+				android:textColor="#FFFDFDFD"/>
+
+		</LinearLayout>
+
+	</android.support.v7.widget.Toolbar>
+
+	<LinearLayout
+		android:paddingLeft="10.0dip"
+		android:paddingRight="10.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10.0dip">
+
+		<EditText
+			android:textSize="15.0sp"
+			android:id="@+id/input"
+			android:background="@drawable/rounded_edittext"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:layout_width="fill_parent"
+			android:layout_height="45.0dip"
+			android:hint="Paste Link"
+			android:ems="19"
+			android:inputType="textPersonName">
+
+			<requestFocus/>
+
+		</EditText>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:gravity="right"
+		android:orientation="horizontal"
+		android:paddingRight="10.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10.0dip">
+
+		<Button
+			android:textSize="12.0dip"
+			android:textColor="@color/black"
+			android:layout_gravity="center"
+			android:id="@+id/btndownload"
+			android:background="@drawable/show_content_home"
+			android:paddingLeft="16.0dip"
+			android:paddingRight="16.0dip"
+			android:layout_width="wrap_content"
+			android:layout_height="35.0dip"
+			android:layout_marginRight="8dp"
+			android:text="Donwload"/>
+
+		<Button
+			android:textSize="12.0dip"
+			android:textColor="@color/white"
+			android:layout_gravity="center"
+			android:id="@+id/btnpaste"
+			android:background="@drawable/button_focused"
+			android:paddingLeft="16.0dip"
+			android:paddingRight="16.0dip"
+			android:layout_width="wrap_content"
+			android:layout_height="35.0dip"
+			android:layout_marginLeft="8dp"
+			android:text="Paste Link"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp">
+
+		<ImageView
+			android:src="@drawable/info"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="fitXY"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
